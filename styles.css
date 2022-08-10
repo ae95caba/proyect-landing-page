@@ -6,17 +6,21 @@ body {
 }
 
 body>*{
-    border: 5px red solid;
+    border: 2px red solid;
     display: flex;
-    padding: 15px 15vw;
+    
 }
 
 body>*>*{
-    border: 5px orange solid;
+    border: 2px orange solid;
 }
 
 body>*>*>*{
-    border: 5px pink solid;
+    border: 2px pink solid;
+}
+
+body>*>*>*>*{
+    border: 2px purple solid;
 }
 
 /* four main sections-----------------------------------*/
@@ -27,6 +31,8 @@ body>*>*>*{
     flex-direction: column;
     background-color: black;
     color: white;
+    padding: 15px 15vw;
+    
     
 }
 
@@ -36,12 +42,15 @@ ul{
     gap: 15px;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
 .header-logo{
     display: flex;
     align-items: center;
+    
 }
 
 a{
@@ -61,6 +70,7 @@ a{
     flex: 1;
     gap: 15px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .right-content{
@@ -79,30 +89,45 @@ img{
 .products-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     min-height: 45vh;
+    padding: 15px 15vw;
+    background-color: pink;
+
 }
 
 .products{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    flex: 1;
     
 }
 
+h2{
+    margin: 0;
+    
+}
 .product{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 15px;
+    width: 200px;
 }
 
+.description{
+    display: flex;
+}
 /*--------------------------------*/
 .note-container{
     min-height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding: 15px 15vw;
 }
 
 .note{
@@ -120,13 +145,50 @@ img{
     
 }
 /*--------------------------------*/
+.action-container{
+    min-height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 7vw;
+}
+
+.action{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 140, 255);
+    border-radius: 15px;
+    color: white;
+    flex: 1;
+
+}
+.action-left, .action-right{
+    padding: 30px 80px;
+    flex: 1;
+}
+
+.action-right{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+   
+    
+    
+}
+.action-button{
+    color: white;
+    background-color: rgb(0, 140, 255);
+    border: 1px white solid;
+}
+/*-------------------------------*/
 
 .footer{
-
+    display: block;
+    text-align: center;
 }
 
-.action-container{
-    min-height: 25vh    ;
-}
+
 
 
