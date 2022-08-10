@@ -114,6 +114,10 @@ a{
         justify-content: space-evenly !important
         
     }
+
+    .header-logo{
+        text-align: center;
+    }
   }
 
 .right-content img{
