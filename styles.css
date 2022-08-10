@@ -96,7 +96,24 @@ a{
 
 }
 
-
+@media only screen and (max-width: 600px) {
+    .right-content img {
+      width: 200px !important;
+      height: 200px !important;
+    }
+    .content{
+        justify-content: space-evenly;}
+    .left-content{
+        align-items: center !important;
+    }
+    
+    .action{
+        padding: 40px 40px !important;
+        gap: 15px;
+        justify-content: space-evenly !important
+        
+    }
+  }
 
 .right-content img{
     width: 500px;
@@ -123,6 +140,9 @@ a{
     justify-content: center;
     align-items: center;
 }
+
+
+
 .product img{
     width: 200px;
     height: 200px;
