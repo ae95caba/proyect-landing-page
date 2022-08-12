@@ -8,11 +8,11 @@ body {
 }
 
 body>*{
-    border: 4px red solid;
+   /* border: 4px red solid;*/
     display: flex;
     
 }
-
+/*
 body>*>*{
     border: 4px green solid;
 }
@@ -24,7 +24,7 @@ body>*>*>*{
 body>*>*>*>*{
     border: 4px blue solid;
 }
-
+*/
 /* four main sections-----------------------------------*/
 
 .hero-text{
@@ -71,6 +71,11 @@ a{
     justify-content: space-between;
 }
 
+.icon{
+    width: 20px;
+    height: 20px;
+}
+
 .content{
     display: flex;
     align-items: center;
@@ -98,6 +103,15 @@ a{
 
 }
 
+@media only screen and (max-width: 1650px){
+    .content{
+        justify-content: space-evenly;
+    }
+    .left-content{
+        align-items: center !important;
+        text-align: center;
+    }
+}
 @media only screen and (max-width: 600px) {
     .right-content img {
       width: 200px !important;
@@ -128,7 +142,7 @@ a{
     
     .note-tittle{
             font-size: 20px !important;
-        }
+    }
     .note-text{
         font-size: 25px !important;
     }
@@ -139,9 +153,21 @@ a{
        
         gap:50px !important;
     }
+    .square-image{
+        display: block !important;
+    }
+    .rectangle-image{
+        display: none;
+    }
   }
 
-.right-content img{
+.square-image{
+    display: none;
+}
+
+
+
+.rectangle-image{
     width: 500px;
     height: 200px;
     border: 3px rgb(0, 153, 255) solid;
@@ -168,7 +194,7 @@ a{
 }
 
 
-
+.square-image,
 .product img{
     width: 200px;
     height: 200px;
