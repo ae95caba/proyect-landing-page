@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    border: 3px dotted blue;
+   /* border: 3px dotted blue;*/
     min-height: 100vh;
 }
 /*
@@ -117,6 +117,10 @@ a{
 
     .header-logo{
         text-align: center;
+
+    }
+    .action-left{
+        text-align: center;
     }
   }
 
@@ -198,7 +202,7 @@ h2{
 }
 /*--------------------------------*/
 .note-container{
-    min-height: 35vh;
+    min-height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,7 +231,7 @@ h2{
 }
 /*--------------------------------*/
 .action-container{
-    min-height: 30vh;
+    min-height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;
