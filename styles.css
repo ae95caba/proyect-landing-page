@@ -1,10 +1,12 @@
+
+
 body {
     display: flex;
     flex-direction: column;
    /* border: 3px dotted blue;*/
     min-height: 100vh;
 }
-/*
+
 body>*{
     border: 4px red solid;
     display: flex;
@@ -22,7 +24,7 @@ body>*>*>*{
 body>*>*>*>*{
     border: 4px blue solid;
 }
-*/
+
 /* four main sections-----------------------------------*/
 
 .hero-text{
@@ -75,7 +77,7 @@ a{
     justify-content: space-between;
     
     gap: 15px;
-   flex-wrap: wrap;*/ 
+   flex-wrap: wrap;
     
 }
 
@@ -121,6 +123,21 @@ a{
     }
     .action-left{
         text-align: center;
+    }
+ 
+    
+    .note-tittle{
+            font-size: 20px !important;
+        }
+    .note-text{
+        font-size: 25px !important;
+    }
+    .left-content{
+        gap: 15px;
+    }
+    .hero-text{
+       
+        gap:50px !important;
     }
   }
 
@@ -208,11 +225,13 @@ h2{
     align-items: center;
     padding: 15px 15vw;
     background-color: #e5e7eb;
+   
 }
 
 .note{
     display: flex;
     flex-direction: column;
+    font-size: small;
    
 }
 
